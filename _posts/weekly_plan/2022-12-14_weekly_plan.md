@@ -1,0 +1,31 @@
+---
+layout: post
+title: 2022/12/05 ~
+comments: true
+categories : [weekly_plan]
+published: true
+
+---
+✨TO DO LIST - WEEKLY✨(~12/12)
+- [x] NLP FINAL PROJECT
+- [x] 고급 머신러닝 시험 공부하기
+
+
+🔮TO DO LIST - STUDY 🔮
+- [ ] 프로그래머스 문제 풀기
+- [ ] amodal instance segmentation 논문 읽기
+- [x] 고급 머신러닝 시험 공부
+
+🎞TO DO LIST - WORK🎞
+- [ ] 스포투 데이터 돌릴 코드 짜기 
+- [ ] 로봇 제어 함수 확인하기 (UDP/IP 통신 문제일듯)
+- [ ] 로봇 ARM 사이즈 재오기
+
+🥐NLP FINAL PROJECT🥐
+- [x] tokenizer 비교하기
+- [x] toeknizer 별로 문제에 대한 답 살펴보기
+- [x] 최종 발표 자료 만들기
+- [x] 코드 수정하기
+
+🎄연구실 서버 세팅🎄
+- [x] 특정 ip로 ssh 접속하기
