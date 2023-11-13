@@ -1,17 +1,7 @@
----
----
-
-//
-// IMPORTS
-//
-
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
+@import "highlights";
+@import "svg-icons";
 
 html {
   font-size: 100%;
@@ -20,8 +10,6 @@ html {
 }
 
 body {
-	
-
   font: 18px/1.4 $helvetica;
   color: $gray;
   width: 1300px;
@@ -35,19 +23,19 @@ body {
   display: table-footer-group;
 }
 
-.container-main {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-  width: 100%;
-  margin-left: 550px;
-}
-
+.container-main,
 .container-post {
   margin: 0 auto;
   max-width: 940px;
   padding: 0 10px;
   width: 100%;
+}
+
+.container-main {
+  margin-left: 550px;
+}
+
+.container-post {
   margin-left: 345px;
 }
 
@@ -55,7 +43,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $gray;
   font-weight: bold;
-
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -79,7 +66,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color : $gray;
+  color: $gray;
   width: 900px;
 }
 
@@ -95,7 +82,7 @@ p {
 a {
   color: #7f7fd5;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $lightGray;
   }
@@ -134,7 +121,6 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
@@ -144,35 +130,25 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
-::-moz-selection {
+::moz-selection {
   color: $black;
   background: $lightGray;
 }
+
 ::selection {
   color: $black;
   background: $lightGray;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
 
 .wrapper-masthead {
   margin-bottom: 50px;
@@ -250,7 +226,7 @@ img {
 nav {
   margin-right: 46px;
   float: none;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 23px;
   font-family: $helveticaNeue;
   font-size: 18px;
   display: grid;
@@ -279,10 +255,6 @@ nav {
     }
   }
 }
-
-//
-// .main
-//
 
 .posts > .post {
   padding-bottom: 0em;
@@ -325,8 +297,3 @@ nav {
   margin-left: -99px;
   width: 300px;
 }
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
