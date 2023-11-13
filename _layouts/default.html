@@ -14,10 +14,10 @@
 </head>
 
 <body>
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header class="masthead clearfix">
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }} Avatar" /></a>
+  <div class="wrapper">
+    <header class="masthead">
+      <div class="container">
+        <div class="site-avatar"><a href="{{ site.baseurl }}/"><img src="{{ site.avatar }}" alt="{{ site.name }} Avatar" /></a></div>
         <div class="site-info">
           <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
           <p class="site-description">{{ site.description }}</p>
@@ -30,20 +30,18 @@
           <a href="/category/weekly_plan">Weekly Plans</a>
           <a href="{{ site.baseurl }}/about">About</a>
         </nav>
-      </header>
+      </div>
+    </header>
+
+    <div id="main" role="main" class="container-main">
+      {{ content }}
     </div>
-  </div>
 
-  <div id="main" role="main" class="container-main">
-    {{ content }}
-  </div>
-
-  <div class="wrapper-footer">
-    <div class="container">
-      <footer class="footer">
+    <footer class="wrapper-footer">
+      <div class="container">
         {% include svg-icons.html %}
-      </footer>
-    </div>
+      </div>
+    </footer>
   </div>
 
   {% include analytics.html %}
