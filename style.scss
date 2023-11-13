@@ -9,10 +9,51 @@ html {
   background-size: 2000px;
 }
 
+/* Body styles */
 body {
-  font: 18px/1.4 $helvetica;
-  color: $gray;
-  width: 1300px;
+  background-color: #8B00FF; /* Purple background color */
+  color: #fff; /* White text color */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Masthead styles */
+.wrapper-masthead {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.masthead {
+  background-color: #9932CC; /* Dark Orchid color for masthead background */
+  padding: 20px 0;
+  border-bottom: 1px solid #fff; /* White border bottom */
+}
+
+.site-name a,
+.site-description {
+  color: #fff; /* White text color for site name and description */
+}
+
+nav a {
+  color: #fff; /* White text color for navigation links */
+}
+
+/* Main content styles */
+.container-main {
+  background-color: #fff; /* White background color for main content */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer styles */
+.wrapper-footer {
+  background: linear-gradient(-90deg, #e9defa 0%, #fbfcdb 95%);
+  display: flex;
+  margin-top: 20px; /* Adjust as needed */
+  padding: 10px;
+}
+
+.footer {
+  color: #8B00FF; /* Purple text color for footer content */
 }
 
 .container {
